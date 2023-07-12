@@ -1,0 +1,18 @@
+<div class="results">
+  <div class="header">
+    <h1>Results</h1>
+    <p>See below for a breakdown of the ingredients!</p>
+  </div>
+
+  <ng-container *ngFor="let category of categories">
+    <app-result-card title="Hybrid" 
+    [title]="category.toUpperCase()"
+    [filters]="results[category].filters"
+    [success]="results[category].filters.length > 0"
+    [description]="results[category].filters.length > 0 ? results[category].descriptionSuccess : results[category].descriptionFailure"
+    [info]="results[category].info"
+    ></app-result-card>
+  </ng-container>
+</div>
+
+

@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Hybrid",
+      "descriptionSuccess": "This sunscreen has hybrid filters!",
+      "descriptionFailure": "This sunscreen does not have hybrid filters.",
+      "info": "Hybrid sunscreens combine chemical and mineral filters to provide broad-spectrum protection against UVA and UVB rays. They offer a combination of effective sun protection and a comfortable, lightweight feel on the skin.",
+      "filters": []
+    },
+    {
+      "name": "Mineral",
+      "descriptionSuccess": "This sunscreen has mineral filters!",
+      "descriptionFailure": "This sunscreen does not have mineral filters.",
+      "info": "Mineral sunscreens contain active ingredients like titanium dioxide and zinc oxide that work by physically blocking and reflecting UV rays away from the skin. They are suitable for sensitive skin and provide effective broad-spectrum protection.",
+      "filters": []
+    },
+    {
+      "name": "Chemical",
+      "descriptionSuccess": "This sunscreen has chemical filters!",
+      "descriptionFailure": "This sunscreen does not have chemical filters.",
+      "info": "Chemical sunscreens contain organic compounds that absorb UV rays and convert them into heat, preventing them from damaging the skin. They are lightweight, easily spreadable, and offer broad-spectrum protection.",
+      "filters": []
+    },
+    {
+      "name": "UVA1",
+      "descriptionSuccess": "This sunscreen provides UVA1 protection!",
+      "descriptionFailure": "This sunscreen does not provide UVA1 protection.",
+      "info": "UVA1 rays penetrate deep into the skin and are primarily responsible for skin aging and long-term damage. Sunscreens with UVA1 protection help shield against these harmful rays, reducing the risk of premature aging and skin damage.",
+      "filters": []
+    },
+    {
+      "name": "UVA2",
+      "descriptionSuccess": "This sunscreen provides UVA2 protection!",
+      "descriptionFailure": "This sunscreen does not provide UVA2 protection.",
+      "info": "UVA2 rays contribute to immediate tanning and also play a role in skin aging. Sunscreens with UVA2 protection help defend against these rays, providing additional protection against the aging effects of the sun.",
+      "filters": []
+    },
+    {
+      "name": "UVB",
+      "descriptionSuccess": "This sunscreen provides UVB protection!",
+      "descriptionFailure": "This sunscreen does not provide UVB protection.",
+      "info": "UVB rays are the primary cause of sunburn and are strongly associated with skin cancer. Sunscreens with UVB protection help prevent sunburn and related skin damage, reducing the risk of skin cancer.",
+      "filters": []
+    },
+    {
+      "name": "UVC",
+      "descriptionSuccess": "This sunscreen provides UVC protection!",
+      "descriptionFailure": "This sunscreen does not provide UVC protection.",
+      "info": "UVC rays are the most dangerous but are absorbed by the Earth's atmosphere and do not reach the skin. Sunscreens do not typically provide UVC protection, as it is not necessary under normal circumstances.",
+      "filters": []
+    }
+  ]
+  

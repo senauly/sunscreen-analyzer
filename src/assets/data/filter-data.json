@@ -1,0 +1,113 @@
+[
+    {
+      "name": "Avobenzone",
+      "INCI": "Butyl Methoxydibenzoylmethane",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": false,
+      "isUVC": false
+    },
+    {
+      "name": "Octinoxate",
+      "INCI": "Ethylhexyl Methoxycinnamate",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": false,
+      "isUVA2": false,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Octisalate",
+      "INCI": "Ethylhexyl Salicylate",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": false,
+      "isUVA2": false,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Oxybenzone",
+      "INCI": "Benzophenone-3",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Titanium Dioxide",
+      "INCI": "Titanium Dioxide",
+      "isChemical": false,
+      "isMineral": true,
+      "isHybrid": false,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Zinc Oxide",
+      "INCI": "Zinc Oxide",
+      "isChemical": false,
+      "isMineral": true,
+      "isHybrid": false,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Octocrylene",
+      "INCI": "Octocrylene",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": false,
+      "isUVA2": false,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Ecamsule",
+      "INCI": "Terephthalylidene Dicamphor Sulfonic Acid",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": false,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": false,
+      "isUVC": false
+    },
+    {
+      "name": "Tinosorb S",
+      "INCI": "Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine",
+      "isChemical": true,
+      "isMineral": false,
+      "isHybrid": true,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": true,
+      "isUVC": false
+    },
+    {
+      "name": "Tinosorb M",
+      "INCI": "Methylene Bis-Benzotriazolyl Tetramethylbutylphenol",
+      "isChemical": false,
+      "isMineral": true,
+      "isHybrid": true,
+      "isUVA1": true,
+      "isUVA2": true,
+      "isUVB": true,
+      "isUVC": false
+    }
+  ]
+  

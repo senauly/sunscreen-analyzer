@@ -1,0 +1,61 @@
+.panel {
+    border-radius: 10px;
+    border: none;
+    width: 40%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 1px 5px 0px rgba(3, 3, 3, .15);
+    margin-bottom: 5%; 
+}
+
+.panel-heading {
+    color: #fff;
+    font-size: 2em;
+    padding: 10px;
+
+    mat-card-title {
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+}
+
+.panel-body {
+    padding: 15px;
+}
+
+
+.list-group {
+    padding-left: 0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 5px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.list-group-item:first-child {
+    border-top: none; 
+    margin-bottom: 10px;
+}
+
+.card-title h4 {
+    font-weight: 700;
+    font-size: 18px
+}
+
+.card-title {
+    margin-bottom: 10px
+}
+
+h4.card-title {
+    font-size: 1.15em
+}
+
+
+p.card-text {
+    font-size: 1em;
+    padding: 5px 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,15 @@
+<mat-card class="panel panel-primary">
+    <mat-card-header [style.backgroundColor]="success ? '#673ab7' : '#c7c2bb'" class="panel-heading">
+        <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="panel-body">
+        <p class="card-text">
+        {{description}}
+        </p>
+        <ul class="list-group">
+            <li class="list-group-item">{{info}}</li>
+            <li class="list-group-item" *ngFor="let filter of filters">{{filter}}</li>
+        </ul>
+    </mat-card-content>
+</mat-card>
+      

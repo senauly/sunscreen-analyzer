@@ -1,0 +1,23 @@
+<div class="main">
+  
+  <div class="header">
+    <h1>Sunscreen Filter Analyzer</h1>
+    <p>Enter the ingredients of seperated by commas and click the submit button to see the analysis!</p>
+  </div>
+
+  <div class="input">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Filters</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <textarea [(ngModel)]="ingredients" matInput placeholder="Enter the ingredients"></textarea>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="onSubmit()" mat-raised-button color="primary">Submit</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
