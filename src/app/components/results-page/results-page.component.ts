@@ -8,7 +8,7 @@ import { ResultsService } from '../../services/results.service';
 })
 
 export class ResultsPageComponent {
-
+  title = 'Sunscreen Filter Analyzer - Results';
   results = this.resultsService.getResults();
   categories = this.results.getCategoryNames();
 

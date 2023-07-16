@@ -10,6 +10,7 @@ import { forkJoin } from 'rxjs';
   styleUrls: ['./input-page.component.scss']
 })
 export class InputPageComponent {
+  title = 'Sunscreen Filter Analyzer';
   filters$ = this.dataService.getFilters();
   results$ = this.dataService.getResults();
   ingredients = this.resultsService.getIngredients() || '';
