@@ -12,7 +12,7 @@ import { forkJoin } from 'rxjs';
 export class InputPageComponent {
   filters$ = this.dataService.getFilters();
   results$ = this.dataService.getResults();
-  ingredients = '';
+  ingredients = this.resultsService.getIngredients() || '';
   
   constructor(
     private resultsService: ResultsService,
@@ -22,6 +22,7 @@ export class InputPageComponent {
 
 
   onSubmit() {
+    this.resultsService.setIngredients(this.ingredients);
     forkJoin([this.filters$, this.results$]).subscribe(([filters, results]) => {
       const ingredients = this.ingredients.split(',');
 

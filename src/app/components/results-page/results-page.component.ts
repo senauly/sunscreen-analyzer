@@ -9,12 +9,10 @@ import { ResultsService } from '../../services/results.service';
 
 export class ResultsPageComponent {
 
-  results = this.resultsService.results;
+  results = this.resultsService.getResults();
   categories = this.results.getCategoryNames();
 
-  constructor(public resultsService: ResultsService) {
-    console.log(this.categories)
-  }
+  constructor(public resultsService: ResultsService) {}
 
 }
 
