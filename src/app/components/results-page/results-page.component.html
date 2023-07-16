@@ -5,7 +5,9 @@
   </div>
 
   <ng-container *ngFor="let category of categories">
-    <app-result-card title="category" 
+    <app-result-card 
+    *ngIf="results[category].filters.length > 0 || (results[category].filters.length == 0 && results[category].descriptionFailure != '')"
+    title="category" 
     [title]="category.toUpperCase()"
     [filters]="results[category].filters"
     [success]="results[category].filters.length > 0"

@@ -5,21 +5,16 @@ export class Results {
     hybrid!: Category;
     mineral!: Category;
     chemical!: Category;
-    waterResistant!: Category;
     blueLightProtection!: Category;
+    Photostable!: Category;
     UVA1!: Category;
     UVA2!: Category;
     UVB!: Category;
-    UVC!: Category;
     
     constructor(categoryObj: any) {
         Object.keys(categoryObj).forEach(key => {
           this[key] = categoryObj[key];
         });
-    }
-    
-    addHybrid(hybrid: string) {
-        this.hybrid.filters.push(hybrid);
     }
 
     addMineral(mineral: string) {
@@ -28,6 +23,10 @@ export class Results {
 
     addChemical(chemical: string) {
         this.chemical.filters.push(chemical);
+    }
+
+    addHybrid(hybrid: string) {
+        this.hybrid.filters.push(hybrid);
     }
 
     addUVA1(UVA1: string) {
@@ -42,16 +41,20 @@ export class Results {
         this.UVB.filters.push(UVB);
     }
 
-    addUVC(UVC: string) {
-        this.UVC.filters.push(UVC);
-    }
-
-    addWaterResistant(waterResistant: string) {
-        this.waterResistant.filters.push(waterResistant);
+    addPhotostable(Photostable: string) {
+        this.Photostable.filters.push(Photostable);
     }
 
     addBlueLightProtection(blueLightProtection: string) {
         this.blueLightProtection.filters.push(blueLightProtection);
+    }
+
+    isHybrid(): boolean {
+        if (this.mineral.filters.length > 0 && this.chemical.filters.length > 0) {
+            this.hybrid.filters.push(" ");
+            return true;
+        }
+        return false;
     }
 
     getCategoryNames(): string[] {

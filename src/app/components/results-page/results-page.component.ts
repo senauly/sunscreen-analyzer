@@ -13,6 +13,7 @@ export class ResultsPageComponent {
   categories = this.results.getCategoryNames();
 
   constructor(public resultsService: ResultsService) {
+    console.log(this.categories)
   }
 
 }

@@ -1,10 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { Filter } from '../../models/filter.model';
 import { ResultsService } from '../../services/results.service';
 import { DataService } from '../../services/data.service';
-
-import { Results } from '../../models/results.model';
 import { forkJoin } from 'rxjs';
 
 @Component({
@@ -41,6 +38,8 @@ export class InputPageComponent {
         }
       }
 
+      results.isHybrid();
+      
       this.resultsService.setResults(results);
       this.router.navigate(['/results']);
     });
