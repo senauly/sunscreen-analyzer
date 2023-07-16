@@ -6,7 +6,7 @@ export class Results {
     mineral!: Category;
     chemical!: Category;
     blueLightProtection!: Category;
-    Photostable!: Category;
+    photostable!: Category;
     UVA1!: Category;
     UVA2!: Category;
     UVB!: Category;
@@ -42,7 +42,7 @@ export class Results {
     }
 
     addPhotostable(Photostable: string) {
-        this.Photostable.filters.push(Photostable);
+        this.photostable.filters.push(Photostable);
     }
 
     addBlueLightProtection(blueLightProtection: string) {

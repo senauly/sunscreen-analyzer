@@ -15,7 +15,6 @@ export class ResultsPageComponent {
   constructor(public resultsService: ResultsService) {}
 
   ngOnInit(): void {
-    //if the results are empty, redirect to the home page
     if (this.results == null) {
       window.location.href = '/';
     }

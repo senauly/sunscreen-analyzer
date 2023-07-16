@@ -42,14 +42,14 @@
       "filters": []
     },
     {
-      "name": "blue light protection",
+      "name": "blue Light Protection",
       "descriptionSuccess": "This sunscreen provides blue light protection!",
       "descriptionFailure": "",
       "info": "Blue light protection sunscreens help shield the skin from the potentially harmful effects of blue light emitted by electronic devices and screens. They provide an extra layer of defense against digital-induced skin damage.",
       "filters": []
     },
     {
-      "name": "Photostable",
+      "name": "photostable",
       "descriptionSuccess": "This sunscreen has Photostable filters!",
       "descriptionFailure": "",
       "info": "Photostable sunscreens maintain their effectiveness when exposed to sunlight, ensuring that they don't degrade or lose their protective properties over time. They provide consistent protection throughout sun exposure.",

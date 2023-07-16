@@ -30,6 +30,7 @@ export class DataService {
       map(categories => {
         let categoryObj: any = {};
         categories.forEach(category => {
+          category.name = category.name.replace(/\s/g, '');
           categoryObj[category.name] = category;
         });
 
