@@ -16,9 +16,6 @@ import { FormsModule } from '@angular/forms';
 import { InputPageComponent } from './components/input-page/input-page.component';
 import { ResultsPageComponent } from './components/results-page/results-page.component';
 import { ResultCardComponent } from './components/results-page/result-card/result-card.component';
-import { FooterComponent } from './components/footer/footer.component';
-
-
 
 
 @NgModule({
@@ -26,8 +23,7 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     InputPageComponent,
     ResultsPageComponent,
-    ResultCardComponent,
-    FooterComponent
+    ResultCardComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sunscreen Filter Analyzer';
+  currentYear!: number;
+
+  ngOnInit() {
+    this.currentYear = new Date().getFullYear();
+  }
 }

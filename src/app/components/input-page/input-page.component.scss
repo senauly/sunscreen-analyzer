@@ -1,5 +1,5 @@
 .main {
-    margin-top: 1%;
+    margin-top: 2rem;
     padding: 5%;
 
     .header {
@@ -7,7 +7,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 5%;
+        margin-bottom: 2rem;
 
 
         h1 {
@@ -33,6 +33,12 @@
         mat-card {
             max-width: none;
             width: 80%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+
             margin: 0 auto;
             align-items: center;
             padding: 2%;

@@ -1,15 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sunscreen Filter Analyzer</title>
-  <meta name="description" content="Analyze your sunscreen filters according to their protection across the UV spectrum, learn if they are mineral or chemical, and if they are photostable.">
+  <meta name="description"
+    content="Analyze your sunscreen filters according to their protection across the UV spectrum, learn if they are mineral or chemical, and if they are photostable.">
 </head>
+
 <body>
+  <div class="main-content">
     <router-outlet></router-outlet>
-    <app-footer></app-footer>
+  </div>
 </body>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; {{ currentYear }} - All rights reserved - <a href="https://github.com/senauly" target="_blank">GitHub</a></p>
+  </div>
+</footer>
 </html>
