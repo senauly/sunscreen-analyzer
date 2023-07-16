@@ -2,22 +2,20 @@ import { Category } from "./category.model";
 
 export class Results {
     [key: string]: any;
-    hybrid: Category;
-    mineral: Category;
-    chemical: Category;
-    UVA1: Category;
-    UVA2: Category;
-    UVB: Category;
-    UVC: Category;
+    hybrid!: Category;
+    mineral!: Category;
+    chemical!: Category;
+    waterResistant!: Category;
+    blueLightProtection!: Category;
+    UVA1!: Category;
+    UVA2!: Category;
+    UVB!: Category;
+    UVC!: Category;
     
-    constructor(hybrid: Category, mineral: Category, chemical: Category, UVA1: Category, UVA2: Category, UVB: Category, UVC: Category) {
-        this.hybrid = hybrid;
-        this.mineral = mineral;
-        this.chemical = chemical;
-        this.UVA1 = UVA1;
-        this.UVA2 = UVA2;
-        this.UVB = UVB;
-        this.UVC = UVC;
+    constructor(categoryObj: any) {
+        Object.keys(categoryObj).forEach(key => {
+          this[key] = categoryObj[key];
+        });
     }
     
     addHybrid(hybrid: string) {
@@ -46,5 +44,17 @@ export class Results {
 
     addUVC(UVC: string) {
         this.UVC.filters.push(UVC);
+    }
+
+    addWaterResistant(waterResistant: string) {
+        this.waterResistant.filters.push(waterResistant);
+    }
+
+    addBlueLightProtection(blueLightProtection: string) {
+        this.blueLightProtection.filters.push(blueLightProtection);
+    }
+
+    getCategoryNames(): string[] {
+        return Object.keys(this);
     }
 }

@@ -10,12 +10,9 @@ import { ResultsService } from '../../services/results.service';
 export class ResultsPageComponent {
 
   results = this.resultsService.results;
-
-  categories = ['hybrid', 'mineral', 'chemical', 'UVA1', 'UVA2', 'UVB', 'UVC'];
-
+  categories = this.results.getCategoryNames();
 
   constructor(public resultsService: ResultsService) {
-    console.log(this.results);
   }
 
 }

@@ -9,8 +9,10 @@ export class Filter {
     isUVA2: boolean;
     isUVB: boolean;
     isUVC: boolean;
+    isWaterResistant: boolean;
+    isBlueLightProtection: boolean;
 
-    constructor(name: string, INCI:string, isChemical: boolean, isMineral: boolean, isHybrid: boolean, isUVA1: boolean, isUVA2: boolean, isUVB: boolean, isUVC: boolean) {
+    constructor(name: string, INCI:string, isChemical: boolean, isMineral: boolean, isHybrid: boolean, isUVA1: boolean, isUVA2: boolean, isUVB: boolean, isUVC: boolean, isWaterResistant: boolean, isBlueLightProtection: boolean) {
         this.name = name;
         this.INCI = INCI;
         this.isChemical = isChemical;
@@ -20,5 +22,7 @@ export class Filter {
         this.isUVA2 = isUVA2;
         this.isUVB = isUVB;
         this.isUVC = isUVC;
+        this.isWaterResistant = isWaterResistant;
+        this.isBlueLightProtection = isBlueLightProtection;
     }
 }

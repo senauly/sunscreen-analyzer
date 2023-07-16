@@ -5,7 +5,7 @@
   </div>
 
   <ng-container *ngFor="let category of categories">
-    <app-result-card title="Hybrid" 
+    <app-result-card title="category" 
     [title]="category.toUpperCase()"
     [filters]="results[category].filters"
     [success]="results[category].filters.length > 0"

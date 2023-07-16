@@ -1,20 +1,20 @@
 [
     {
-      "name": "Hybrid",
+      "name": "hybrid",
       "descriptionSuccess": "This sunscreen has hybrid filters!",
       "descriptionFailure": "This sunscreen does not have hybrid filters.",
       "info": "Hybrid sunscreens combine chemical and mineral filters to provide broad-spectrum protection against UVA and UVB rays. They offer a combination of effective sun protection and a comfortable, lightweight feel on the skin.",
       "filters": []
     },
     {
-      "name": "Mineral",
+      "name": "mineral",
       "descriptionSuccess": "This sunscreen has mineral filters!",
       "descriptionFailure": "This sunscreen does not have mineral filters.",
       "info": "Mineral sunscreens contain active ingredients like titanium dioxide and zinc oxide that work by physically blocking and reflecting UV rays away from the skin. They are suitable for sensitive skin and provide effective broad-spectrum protection.",
       "filters": []
     },
     {
-      "name": "Chemical",
+      "name": "chemical",
       "descriptionSuccess": "This sunscreen has chemical filters!",
       "descriptionFailure": "This sunscreen does not have chemical filters.",
       "info": "Chemical sunscreens contain organic compounds that absorb UV rays and convert them into heat, preventing them from damaging the skin. They are lightweight, easily spreadable, and offer broad-spectrum protection.",
@@ -46,6 +46,20 @@
       "descriptionSuccess": "This sunscreen provides UVC protection!",
       "descriptionFailure": "This sunscreen does not provide UVC protection.",
       "info": "UVC rays are the most dangerous but are absorbed by the Earth's atmosphere and do not reach the skin. Sunscreens do not typically provide UVC protection, as it is not necessary under normal circumstances.",
+      "filters": []
+    },
+    {
+      "name": "water resistant",
+      "descriptionSuccess": "This sunscreen is water-resistant!",
+      "descriptionFailure": "This sunscreen is not water-resistant.",
+      "info": "Water-resistant sunscreens offer extended protection even when exposed to water or sweat, making them ideal for outdoor activities and water sports. However, it is essential to reapply after swimming or excessive sweating.",
+      "filters": []
+    },
+    {
+      "name": "blue light protection",
+      "descriptionSuccess": "This sunscreen provides blue light protection!",
+      "descriptionFailure": "This sunscreen does not provide blue light protection.",
+      "info": "Blue light protection sunscreens help shield the skin from the potentially harmful effects of blue light emitted by electronic devices and screens. They provide an extra layer of defense against digital-induced skin damage.",
       "filters": []
     }
   ]

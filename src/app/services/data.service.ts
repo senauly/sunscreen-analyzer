@@ -12,36 +12,31 @@ import { Results } from '../models/results.model';
 })
 
 export class DataService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
+
+  categorySrc = '/assets/data/category-data.json';
+  filterSrc = '/assets/data/filter-data.json';
 
   getCategories(): Observable<Category[]> {
-    return this.http.get<Category[]>(`/assets/data/category-data.json`);
+    return this.http.get<Category[]>(this.categorySrc);
   }
 
   getFilters(): Observable<Filter[]> {
-    return this.http.get<Filter[]>(`/assets/data/filter-data.json`);
+    return this.http.get<Filter[]>(this.filterSrc);
   }
 
   getResults(): Observable<Results> {
     return this.getCategories().pipe(
       map(categories => {
-  
-        const hybrid = categories.find(c => c.name === 'Hybrid');
-        const mineral = categories.find(c => c.name === 'Mineral');
-        const chemical = categories.find(c => c.name === 'Chemical');
-        const UVA1 = categories.find(c => c.name === 'UVA1');
-        const UVA2 = categories.find(c => c.name === 'UVA2');
-        const UVB = categories.find(c => c.name === 'UVB');
-        const UVC = categories.find(c => c.name === 'UVC');
-  
-        if (!hybrid || !mineral || !chemical || !UVA1 || !UVA2 || !UVB || !UVC) {
-          throw new Error('One or more required categories not found');
-        }
-  
-        return new Results(hybrid, mineral, chemical, UVA1, UVA2, UVB, UVC);
+        let categoryObj: any = {};
+        categories.forEach(category => {
+          categoryObj[category.name] = category;
+        });
+
+        return new Results(categoryObj);
       })
     );
   }
-  
+
 
 }
