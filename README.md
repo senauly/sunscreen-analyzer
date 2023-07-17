@@ -4,7 +4,7 @@ Sunscreen Filter Analyzer is an Angular web application that allows users to inp
 
 ## Live Demo
 
-You can view a live demo of the project at [sunscreen-filter-analyzer.web.app].
+You can view a live demo of the project [[here](https://sunscreen-filter-analyzer.web.app)].
 
 ## Getting Started
 
